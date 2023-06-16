@@ -21,7 +21,7 @@ func TestThrottleNoLimits(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		go func() {
 			throttle.Acquire()
-			time.Sleep(1000)
+			time.Sleep(2000)
 			defer throttle.Release()
 		}()
 	}
@@ -30,7 +30,7 @@ func TestThrottleNoLimits(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		go func() {
 			throttle.Acquire()
-			time.Sleep(1000)
+			time.Sleep(2000)
 			defer throttle.Release()
 		}()
 	}

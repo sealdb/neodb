@@ -1,0 +1,52 @@
+drop database if exists integrate_test;
+./mtr.sh: line 25: mysql: command not found
+
+create /*test alter database start*/ database integrate_test DEFAULT CHARSET=utf8 collate utf8_unicode_ci;
+./mtr.sh: line 25: mysql: command not found
+
+show create database integrate_test;
+./mtr.sh: line 25: mysql: command not found
+
+alter /*no database selected*/ database default character set = utf8 collate = utf8_unicode_ci;
+./mtr.sh: line 25: mysql: command not found
+
+alter database integrate_test default character set = utf8mb4 collate = utf8mb4_bin;
+./mtr.sh: line 25: mysql: command not found
+
+show create database integrate_test;
+./mtr.sh: line 25: mysql: command not found
+
+alter database integrate_test default character set = utf8 collate = utf8_unicode_ci;
+./mtr.sh: line 25: mysql: command not found
+
+show create database integrate_test;
+./mtr.sh: line 25: mysql: command not found
+
+drop /*test alter database end */ database integrate_test;
+./mtr.sh: line 25: mysql: command not found
+drop database if exists integrate_test;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+create /*test alter database start*/ database integrate_test DEFAULT CHARSET=utf8 collate utf8_unicode_ci;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+show create database integrate_test;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+alter /*no database selected*/ database default character set = utf8 collate = utf8_unicode_ci;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+alter database integrate_test default character set = utf8mb4 collate = utf8mb4_bin;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+show create database integrate_test;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+alter database integrate_test default character set = utf8 collate = utf8_unicode_ci;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+show create database integrate_test;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)
+
+drop /*test alter database end */ database integrate_test;
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3308' (61)

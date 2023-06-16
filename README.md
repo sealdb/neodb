@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/sealdb/neodb.svg?branch=master)](https://travis-ci.org/sealdb/neodb)
+[![Github Actions Status](https://github.com/sealdb/neodb/workflows/NeoDB%20Build/badge.svg?event=push)](https://github.com/sealdb/neodb/actions?query=workflow%3A%NeoDB+Build%22+event%3Apush)
+[![Github Actions Status](https://github.com/sealdb/neodb/workflows/NeoDB%20Test/badge.svg?event=push)](https://github.com/sealdb/neodb/actions?query=workflow%3A%NeoDB+Test%22+event%3Apush)
+[![Github Actions Status](https://github.com/sealdb/neodb/workflows/NeoDB%20Coverage/badge.svg?event=push)](https://github.com/sealdb/neodb/actions?query=workflow%3A%NeoDB+Coverage%22+event%3Apush)
 [![Go Report Card](https://goreportcard.com/badge/github.com/sealdb/neodb)](https://goreportcard.com/report/github.com/sealdb/neodb)
-[![codecov.io](https://codecov.io/gh/sealdb/neodb/graphs/badge.svg)](https://codecov.io/gh/sealdb/neodb/branch/master)
+[![codecov.io](https://codecov.io/gh/sealdb/neodb/graphs/badge.svg)](https://codecov.io/gh/sealdb/neodb/branch/main)
 
 # OverView
 
